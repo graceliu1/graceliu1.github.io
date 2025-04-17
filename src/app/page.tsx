@@ -1,103 +1,83 @@
-import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="min-h-screen w-full px-4 sm:px-6 md:px-12 py-10 bg-[#021c3f] text-[#cfa9e8]">
+      <div className="max-w-4xl mx-auto">
+        {/* Header */}
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 my-6">
+          <Link href="/">
+            <button className="text-3xl py-2 hover:text-cyan-400 transition duration-200">
+              <code className="neon-text">Grace Liu <span className="text-[#ffeead]">٩(＾◡＾)۶ </span></code>
+            </button>
+          </Link>
+          <div className="flex flex-wrap justify-end gap-2 text-sm sm:text-base">
+            <a href="https://www.linkedin.com/in/gracebyliu/" target="_blank" className="px-2 py-1 hover:text-pink-400 transition duration-200">
+              <code>{'{'}say hi{'}'}</code>
+            </a>
+            <a href="https://github.com/graceliu1" target="_blank" className="px-2 py-1 hover:text-blue-400 transition duration-200">
+              <code>{'{'}github{'}'}</code>
+            </a>
+            <a href="/extra" className="px-2 py-1 hover:text-purple-400 transition duration-200">
+              <code>{'{'}extra{'}'}</code>
+            </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+        {/* Bio */}
+        <section className="my-10">
+          <p className="max-w-2xl text-sm leading-relaxed text-[#b3d3f5]">
+            <code>
+              I'm a third-year Computer Science student at Princeton. I grew up in the east Bay Area but am currently located in New Jersey.
+              I'm interested in <b className="text-[#eddfa5]">software engineering</b> and <b className="text-[#bfdfa2]">machine learning engineer</b> roles. 
+              Some of my hobbies are video games, reading, puzzles, and music. 
+              Reach out to chat!
+            </code>
+          </p>
+        </section>
+
+        {/* Info Cards */}
+        <div className="grid gap-6 md:grid-cols-2 my-10">
+          <div className="p-6 rounded-md border border-[#bfdfa2] bg-[#021c3f] shadow-[0_0_10px_#bfdfa2cc]">
+            <button className="text-lg mb-4 text-[#bfdfa2]">
+              <code>{'{'}education{'}'}</code>
+            </button>
+            <ul className="space-y-1 text-sm text-[#b3d3f5]">
+              <li><code>{'>>'} <b>major:</b> <span className="text-[#eddfa5]">computer science</span></code></li>
+              <li><code>{'>>'} <b>minors:</b> <span className="text-[#eddfa5]">statistics & ML, finance</span></code></li>
+              <li>
+                <code>{'>>'} <b>coursework:</b></code>
+                <ul className="ml-4 mt-1 space-y-1">
+                  <li className="my-2"><code>{'>'} Distributed Systems</code></li>
+                  <li className="my-2"><code>{'>'} Operating Systems</code></li>
+                  <li><code>{'>'} Probability & Stochastic Processes</code></li>
+                  <li><code>{'>'} Economics & Computing (Game Theory)</code></li>
+                  <li><code>{'>'} Computer Vision</code></li>
+                  <li><code>{'>'} Natural Language Processing</code></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div className="p-6 rounded-md border border-[#f398a1] bg-[#021c3f] shadow-[0_0_10px_#f398a1cc]">
+            <button className="text-lg mb-4 text-[#f398a1]">
+              <code>{'{'}experience{'}'}</code>
+            </button>
+            <ul className="space-y-1 text-sm text-[#b3d3f5]">
+              <li><code>{'>>'} Summer 2025 | Incoming SWE Intern @ <a href="https://www.hudsonrivertrading.com/" target="_blank" rel="noopener noreferrer"><b className="text-[#eddfa5]">HRT</b><sup>↗</sup></a></code></li>
+              <li><code>{'>>'} Fall 2024 | Research Fellow @ <a href="https://pdss.princeton.edu/" target="_blank" rel="noopener noreferrer"><b className="text-[#eddfa5]">PDSS</b><sup>↗</sup></a></code></li>
+              <li><code>{'>>'} Summer 2024 | SWE Intern @ <a href="https://www.bloomberg.com/company/" target="_blank" rel="noopener noreferrer"><b className="text-[#eddfa5]">Bloomberg</b><sup>↗</sup></a></code></li>
+              <li><code>{'>>'} Spring 2024 | Intern @ <a href="https://www.hudsonrivertrading.com/" target="_blank" rel="noopener noreferrer"><b className="text-[#eddfa5]">HRT</b><sup>↗</sup></a></code></li>
+              <li><code>{'>>'} Spring 2023 – Now | Grader @ <a href="https://www.cs.princeton.edu/" target="_blank" rel="noopener noreferrer"><b className="text-[#eddfa5]">Princeton CS</b><sup>↗</sup></a></code></li>
+              <li><code>{'>>'} Summer 2023 | SWE Intern @ <a href="https://www.cadence.com/" target="_blank" rel="noopener noreferrer"><b className="text-[#eddfa5]">Cadence</b><sup>↗</sup></a></code></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer className="mt-20 text-center text-xs text-[#b3d3f5]">
+        <code className="mb-1">&copy; Grace Liu</code><br />
+        <code className="text-[0.6rem] mb-1">Theme: VSCode Tomorrow Night Blue</code>
       </footer>
-    </div>
+    </main>
   );
 }
