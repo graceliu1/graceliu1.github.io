@@ -7,7 +7,7 @@ export default function Page() {
         {/* Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 my-6">
           <Link href="/">
-            <button className="text-3xl py-2 hover:text-cyan-400 transition duration-200">
+            <button className="text-4xl py-2 hover:text-cyan-400 transition duration-200">
               <code className="neon-text">Grace Liu <span className="text-[#ffeead]">٩(＾◡＾)۶ </span></code>
             </button>
           </Link>
@@ -29,8 +29,8 @@ export default function Page() {
           <p className="max-w-2xl text-sm leading-relaxed text-[#b3d3f5]">
             <code>
               I'm a third-year Computer Science student at Princeton. I grew up in the east Bay Area but am currently located in New Jersey.
-              I'm interested in <b className="text-[#eddfa5]">software engineering</b> and <b className="text-[#bfdfa2]">machine learning engineer</b> roles. 
-              Some of my hobbies are video games, reading, puzzles, and music. 
+              I'm interested in <b className="text-[#eddfa5]">software engineering</b> and <b className="text-[#bfdfa2]">machine learning engineer</b> roles.
+              Some of my hobbies are video games, reading, puzzlehunts, and music.
               Reach out to chat!
             </code>
           </p>
@@ -43,18 +43,11 @@ export default function Page() {
               <code>{'{'}education{'}'}</code>
             </button>
             <ul className="space-y-1 text-sm text-[#b3d3f5]">
-              <li><code>{'>>'} <b>major:</b> <span className="text-[#eddfa5]">computer science</span></code></li>
-              <li><code>{'>>'} <b>minors:</b> <span className="text-[#eddfa5]">statistics & ML, finance</span></code></li>
+              <li><code>{'>>'} <span className="text-[#eddfa5]">CS @ Princeton</span></code></li>
+              <li><code>{'>>'} minors in  <span className="text-[#eddfa5]"> statistics & ML, finance</span></code></li>
               <li>
-                <code>{'>>'} <b>coursework:</b></code>
-                <ul className="ml-4 mt-1 space-y-1">
-                  <li className="my-2"><code>{'>'} Distributed Systems</code></li>
-                  <li className="my-2"><code>{'>'} Operating Systems</code></li>
-                  <li><code>{'>'} Probability & Stochastic Processes</code></li>
-                  <li><code>{'>'} Economics & Computing (Game Theory)</code></li>
-                  <li><code>{'>'} Computer Vision</code></li>
-                  <li><code>{'>'} Natural Language Processing</code></li>
-                </ul>
+                <code>{'>>'} <b>taken:</b>  Distributed Systems & Operating Systems, Probability & Stochastic Processes
+                  Economics & Computing, Computer Vision, *Computer Networks, *Optimal Learning</code>
               </li>
             </ul>
           </div>
@@ -64,8 +57,8 @@ export default function Page() {
               <code>{'{'}experience{'}'}</code>
             </button>
             <ul className="space-y-1 text-sm text-[#b3d3f5]">
-              <li><code>{'>>'} Summer 2025 | Incoming SWE Intern @ <a href="https://www.hudsonrivertrading.com/" target="_blank" rel="noopener noreferrer"><b className="text-[#eddfa5]">HRT</b><sup>↗</sup></a></code></li>
-              <li><code>{'>>'} Fall 2024 | Research Fellow @ <a href="https://pdss.princeton.edu/" target="_blank" rel="noopener noreferrer"><b className="text-[#eddfa5]">PDSS</b><sup>↗</sup></a></code></li>
+              <li><code>{'>>'} Summer 2025 | SWE Intern @ <a href="https://www.hudsonrivertrading.com/" target="_blank" rel="noopener noreferrer"><b className="text-[#eddfa5]">HRT</b><sup>↗</sup></a></code></li>
+              <li><code>{'>>'} Fall 2024 – Now | Research Fellow @ <a href="https://pdss.princeton.edu/" target="_blank" rel="noopener noreferrer"><b className="text-[#eddfa5]">PDSS</b><sup>↗</sup></a></code></li>
               <li><code>{'>>'} Summer 2024 | SWE Intern @ <a href="https://www.bloomberg.com/company/" target="_blank" rel="noopener noreferrer"><b className="text-[#eddfa5]">Bloomberg</b><sup>↗</sup></a></code></li>
               <li><code>{'>>'} Spring 2024 | Intern @ <a href="https://www.hudsonrivertrading.com/" target="_blank" rel="noopener noreferrer"><b className="text-[#eddfa5]">HRT</b><sup>↗</sup></a></code></li>
               <li><code>{'>>'} Spring 2023 – Now | Grader @ <a href="https://www.cs.princeton.edu/" target="_blank" rel="noopener noreferrer"><b className="text-[#eddfa5]">Princeton CS</b><sup>↗</sup></a></code></li>
@@ -73,6 +66,51 @@ export default function Page() {
             </ul>
           </div>
         </div>
+
+        {/* Papers & Projects */}
+        <section className="my-10">
+          <div className="p-6 rounded-md border border-[#a1c6f3] bg-[#021c3f] shadow-[0_0_10px_#a1c6f3cc]">
+            <button className="text-lg mb-4 text-[#a1c6f3]">
+              <code>{'{'}papers & projects{'}'}</code>
+            </button>
+            <ul className="space-y-4 text-sm text-[#b3d3f5]">
+              <li>
+                <code>
+                  {'>>'} <b className="text-[#eddfa5]">It’s a Bird, Not a Plane: Automated Multi-Hummingbird Tracking in Videos</b> –
+                  built an automated CV pipeline to analyze hummingbird movements for Princeton's Stoddard Lab.
+                  <br />
+                  <span className="text-[#eddfa5]">
+                    <a href="https://your-link-to-paper.com" target="_blank" rel="noopener noreferrer">[pdf]</a> {' '}
+                    <a href="https://github.com/yourusername/project-repo" target="_blank" rel="noopener noreferrer">[code]</a>
+                  </span>
+                </code>
+              </li>
+              <li>
+                <code>
+                  {'>>'} <b className="text-[#eddfa5]">Revisiting Input-Label Demonstrations: In-Context Learning with Large Language Models</b> –
+                  explored verificability of label correctness with modern LLMs.
+                  <br />
+                  <span className="text-[#eddfa5]">
+                    <a href="https://your-link-to-paper.com" target="_blank" rel="noopener noreferrer">[pdf]</a> {' '}
+                    <a href="https://github.com/yourusername/project-repo" target="_blank" rel="noopener noreferrer">[code]</a>
+                  </span>
+                </code>
+              </li>
+              <li>
+                <code>
+                  {'>>'} <b className="text-[#eddfa5]">Stereo Vision-Based 3D Tracking of Table Tennis Ball Trajectories</b> –
+                  worked on a 2D vision system for ping pong tracking in a controlled  environment.
+                  <br />
+                  <span className="text-[#eddfa5]">
+                    <a href="https://your-link-to-paper.com" target="_blank" rel="noopener noreferrer">[pdf]</a>{' '}
+                    <a href="https://github.com/yourusername/project-repo" target="_blank" rel="noopener noreferrer">[code]</a>
+                  </span>
+                </code>
+              </li>
+            </ul>
+          </div>
+        </section>
+
       </div>
       <footer className="mt-20 text-center text-xs text-[#b3d3f5]">
         <code className="mb-1">&copy; Grace Liu</code><br />

@@ -10,7 +10,7 @@ export default function Page() {
         {/* Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 my-6">
           <Link href="/">
-            <button className="text-3xl py-2 hover:text-cyan-400 transition duration-200">
+            <button className="text-4xl py-2 hover:text-cyan-400 transition duration-200">
               <code className="neon-text">Grace Liu <span className="text-[#ffeead]">٩(＾◡＾)۶ </span></code>
             </button>
           </Link>
@@ -71,7 +71,7 @@ export default function Page() {
                 <code className="text-xs mb-1">&copy; 2021 Grace Liu</code><br />
           </div>
           <div className="p-6 rounded-md border border-[#bfdfa2] bg-[#021c3f] shadow-[0_0_10px_#bfdfa2cc]">
-          <button className="text-lg mb-4 text-[#bfdfa2]">
+            <button className="text-lg mb-4 text-[#bfdfa2]">
               <code>{'{'}bathhouse{'}'}</code>
             </button> 
             <p className="space-y-1 text-sm">
@@ -104,11 +104,72 @@ export default function Page() {
                 i believe i am either:			the curtains of water form 
                 a butterfly emerging			strands so thick and fine
                 or the cocoon left behind		almost like her hair.
-                </p>
-                <br />
-                <code className="text-xs mb-1">&copy; 2021 Grace Liu</code><br />
-                </div>
-               
+            </p>
+            <br />
+            <code className="text-xs mb-1">&copy; 2021 Grace Liu</code><br />
+          </div>
+          <div className="p-6 rounded-md border border-[#bfdfa2] bg-[#021c3f] shadow-[0_0_10px_#bfdfa2cc]">
+            <button className="text-lg mb-4 text-[#bfdfa2]">
+              <code>{'{'}bathhouse{'}'}</code>
+            </button> 
+            <p className="space-y-1 text-sm">
+                
+                first, i am 
+                pushing. 
+                being pushed
+                in, out of
+                stagnant lungfuls
+                huffing heat 
+                in a throng of necks.
+                                
+                we move, obedient
+                sinew in packed muscle
+
+
+                climb the salty, 
+                sweating pavement
+                its back slick 
+                with labored breath,
+                spine stretching
+                uptown.
+
+                it exhales from
+                sewer-grate nostrils,
+                white smoke
+                unfurling
+                it shudders
+                beneath.
+
+                to enter its belly
+                is to brave
+                a mouthless cave
+                rusted, timeless.
+
+                i lean back
+                careful, press 
+                both palms 
+                to the platform crust.
+                congealed grime,
+                molted skin,
+                yesterday’s feast.
+
+                turn, twist, duck.
+                don’t let its venom
+                touch me!
+                that slow droplet
+                from its ceiling veins,
+                a poisonous kiss?
+                no, AC drip.
+
+                the city pants, 
+                then pulses.
+                swallows me whole;
+                it doesn’t see me.
+
+            </p>
+            <br />
+            <code className="text-xs mb-1">&copy; 2021 Grace Liu</code><br />
+          </div>
                 
         </div>
       </div>
