@@ -20,7 +20,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Grace Liu",
+  title: "Grace Liu's Website",
   description: "Portfolio of Grace Liu – CS @ Princeton",
 };
 
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} antialiased bg-[#002451] text-[#b3d0f2]`}
+        className={`${montserrat.variable} antialiased`}
       >
         {children}
       </body>
