@@ -1,1 +1,1 @@
-Grace Liu's personal website.
+(c) Grace Liu
